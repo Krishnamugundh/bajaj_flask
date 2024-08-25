@@ -24,9 +24,9 @@ def process_data():
     except Exception as e:
         return jsonify({"is_success": False, "error": str(e)}), 400
 
-@app.route('/bfhl', methods=['GET'])
-def get_operation_code():
-    return jsonify({"operation_code": 1}), 200
+# @app.route('/bfhl', methods=['GET'])
+# def get_operation_code():
+#     return jsonify({"operation_code": 1}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
